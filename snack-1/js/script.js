@@ -5,9 +5,13 @@
 const newArray = [];
 
 let i = 0;
-while (i + newArray <50 ) {
+while (i <50 ) {
     const typeNumber = parseInt (prompt ('type a number'));
+
+    if (!isNaN (typeNumber)){
+        i+=typeNumber
+    }
     newArray.push(typeNumber);    
 }
 
-console.log(newArray);
+console.log(newArray, i);
