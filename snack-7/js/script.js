@@ -14,6 +14,14 @@ function newSquare (){
 
 const mainContentEl = document.getElementById('output');
 
+
 for (let i= 1; i<=userNumber; i++ ){
-    mainContentEl.appendChild(newSquare);
+    const currentSquare = newSquare();
+    const squareContent= i;
+
+    currentSquare.innerHTML += `<span> ${squareContent} </span>`;
+    mainContentEl.appendChild(currentSquare);
+
 }
+
+
