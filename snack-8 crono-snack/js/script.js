@@ -4,6 +4,7 @@ viene avviato un cronometro.
 
 const buttonTimer = document.getElementById('start');
 const stopTimer = document.getElementById ('stop');
+const resetButton = document.getElementById ('reset')
 const secondsTimer = document.getElementById ('second');
 
 // inizializzo con variabile 
@@ -22,4 +23,6 @@ buttonTimer.addEventListener ('click', function (){
 stopTimer.addEventListener ('click', function(){
     clearInterval (clock)
 })
+
+resetButton.addEventListener('click', ()=>secondsTimer.innerHTML = 0)
 
