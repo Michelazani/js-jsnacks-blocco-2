@@ -26,3 +26,5 @@ stopTimer.addEventListener ('click', function(){
 
 resetButton.addEventListener('click', ()=>secondsTimer.innerHTML = 0)
 
+
+
